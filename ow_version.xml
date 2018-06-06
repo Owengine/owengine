@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ow>
+    <name>Owengine CMS</name>
+    <build>1000002</build>
+    <version>10.0.2</version>
+    <copyright>Copyright 2018 Owengine. All rights reserved.</copyright>
+    <license>Common Public Attribution License Version 1.0</license>
+    <licenseUrl>http://www.oxwall.org/license</licenseUrl>
+</ow>

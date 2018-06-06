@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <name>Lighty</name>
+    <key>lighty</key>
+    <version>1.0</version>
+    <compatibility>1.7 and higher</compatibility>
+    <description>Lighty theme</description>	
+	<author>Senior Developer</author>
+    <authorEmail>oxwallplugins@codemonster.club</authorEmail>
+	<authorUrl>http://www.codemonster.club</authorUrl>
+	<developerKey>c0217df8e170f1afb5f926243f5b740d</developerKey>
+    <build>1</build>
+    <copyright>(C) 2017 Codemonster. All rights reserved.</copyright>
+	<license>OSCL</license>
+    <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</theme>

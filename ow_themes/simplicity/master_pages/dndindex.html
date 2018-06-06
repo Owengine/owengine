@@ -1,0 +1,67 @@
+<div class="ow_page_wrap">
+	<div class="ow_menu_fullpage">
+		<div class="ow_menu_fullpage_wrap">{$main_menu}</div>
+	</div>
+	<div class="ow_site_panel clearfix">
+			<a class="ow_logo ow_left" href="{$siteUrl}"></a>
+			<div class="ow_nav_btn"></div>
+			<div class="ow_console_right">
+				{component class='BASE_CMP_Console'}
+			</div>
+	</div>
+	{if isset($imageControlValues.headerImage.src)}
+	<div class="ow_header">
+            <img class="ow_header_img" src="{$imageControlValues.headerImage.src}" />
+            <div class="ow_header_pic"><img class="ow_header_img" src="{$themeImagesUrl}header.jpg" /></div>
+	</div>
+	{/if}
+	<div class="ow_menu_wrap">{component class='BASE_CMP_MainMenu' responsive=true}</div>
+	<div class="ow_page_padding">
+		<div class="ow_page_container">
+			<div class="ow_canvas">
+				<div class="ow_page ow_bg_color clearfix">
+					{if $heading}<h1 class="ow_stdmargin {$heading_icon_class}">{$heading}</h1>{/if}
+					<div class="ow_content">
+						{$content}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ow_footer">
+	<div class="ow_canvas">
+		<div class="ow_page clearfix">
+			{$bottom_menu}
+			<div class="ow_copyright">
+				{text key='base+copyright'}
+			</div>
+			<div style="float:right;padding-bottom: 30px;">
+				{$bottomPoweredByLink}
+			</div>
+		</div>
+	</div>
+</div>    
+{decorator name='floatbox'}
+<script type="text/javascript">
+	$(window).scroll(function() {
+	var $menuwrappos = $('.ow_menu_wrap').offset().top;
+    if ($(this).scrollTop() > $menuwrappos) { 
+        $('.ow_page_wrap').addClass('ow_hidden_menu');
+    }
+    else {
+    	$('.ow_page_wrap').removeClass('ow_hidden_menu');
+    }
+	});
+	$('.ow_nav_btn').click(function() {
+    	if ($('body').hasClass('ow_menu_active')) {
+    		$('body').removeClass('ow_menu_active');
+    	}
+    	else {
+    		$('body').addClass('ow_menu_active');
+    	}
+    })
+    $('.ow_menu_fullpage_wrap a').click(function() {
+    	$('body').removeClass('ow_menu_active');
+    })
+</script>

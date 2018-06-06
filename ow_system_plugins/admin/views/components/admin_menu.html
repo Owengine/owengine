@@ -1,0 +1,6 @@
+<ul class="{if $subMenuClass}{$subMenuClass}{else}ow_admin_submenu_hover{/if}">
+    <li class="ow_admin_submenu_title">{text key="admin+sidebar_`$category`"}</li>
+    {foreach from=$data item='item'}
+        <li {if $item.active}class="active"{/if}><a href="{$item.url}" {if !empty($item.new_window)} target="_blank"{/if}>{$item.label}</a></li>
+    {/foreach}
+</ul>

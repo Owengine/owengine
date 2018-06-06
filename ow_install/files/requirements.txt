@@ -1,0 +1,17 @@
+#PHP version
+php.version 5.0;
+
+#PHP extensions
+php.extensions PDO, mbstring, zip, zlib, ftp, json, dom, gd;
+
+#PHP extensions|Alternative1|Alternative3|etc | New support added for extension with alternative. True if any of them is found.
+php.extensionsAlternatives mysql|mysqli|mysqlt;
+
+#PHP.ini configuration
+ini.safe_mode off;
+
+#GD version
+gd.version 2;
+
+#GD image type support
+gd.support FreeType Support;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="init.php">
+    <testsuites>
+        <testsuite name="Base tests">
+            <directory>ow_core</directory>
+            <directory>ow_utilities</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
